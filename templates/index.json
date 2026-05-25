@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "ghostking-home"
+    }
+  },
+  "order": ["main"]
+}
