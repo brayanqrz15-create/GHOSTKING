@@ -1,0 +1,76 @@
+<main class="ghost-page">
+  <header class="site-header" aria-label="Principal">
+    <div class="header-left">
+      <button class="menu-button" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav class="desktop-nav" aria-label="Tienda">
+        <a href="/collections/all">SHOP</a>
+        <a href="/collections">COLLECTIONS</a>
+        <a href="/pages/about">ABOUT</a>
+      </nav>
+    </div>
+    <a href="/" class="brand-lockup" aria-label="GhostKing inicio">
+      <span>GHOSTKING</span>
+      <strong>TRUST THE PROCESS.</strong>
+      <em>GhostKing</em>
+    </a>
+    <div class="header-actions">
+      <a href="/search" aria-label="Buscar">⌕</a>
+      <a href="/account" aria-label="Cuenta">♙</a>
+      <a href="/cart" aria-label="Carrito">□ <span>({{ cart.item_count }})</span></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>TRUST<br>THE PROCESS.</h1>
+      <p>Every step. Every day.<br>Become the standard.</p>
+      <a class="outline-button" href="/collections/all">SHOP NOW</a>
+    </div>
+    <div class="hero-panel">
+      <span>GHOSTKING</span>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <h2>SHOP BY CATEGORY</h2>
+    <div class="category-grid">
+      <article><div class="product-art warm">Los Angeles</div><h3>GORRAS</h3><a href="/collections/gorras">SHOP NOW</a></article>
+      <article><div class="product-art dark">GHOSTKING</div><h3>CAMISETAS</h3><a href="/collections/camisetas">SHOP NOW</a></article>
+      <article><div class="product-art bag">DUFFLE</div><h3>MALETAS</h3><a href="/collections/maletas">SHOP NOW</a></article>
+    </div>
+  </section>
+
+  <section class="shop-section featured">
+    <h2>FEATURED PRODUCTS</h2>
+    <div class="product-grid">
+      <article><div class="product-art dark script">GhostKing</div><h3>GHOSTKING SCRIPT CAP</h3><p>$49.99</p></article>
+      <article><div class="product-art light">Signature</div><h3>SIGNATURE TEE</h3><p>$59.99</p></article>
+      <article><div class="product-art bag">DUFFLE</div><h3>CROCODILE DUFFLE</h3><p>$199.99</p></article>
+      <article><div class="product-art dark">BACKPACK</div><h3>PREMIUM BACKPACK</h3><p>$249.99</p></article>
+    </div>
+    <a class="outline-button all-products" href="/collections/all">VIEW ALL PRODUCTS</a>
+  </section>
+
+  <section class="benefit-bar" aria-label="Beneficios">
+    <article><strong>FREE SHIPPING</strong><span>On all orders over $150</span></article>
+    <article><strong>SECURE PAYMENT</strong><span>100% secure checkout</span></article>
+    <article><strong>EASY RETURNS</strong><span>30-day return policy</span></article>
+    <article><strong>PREMIUM QUALITY</strong><span>Built to last</span></article>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><a href="/" class="footer-logo">GHOSTKING</a><strong>TRUST THE PROCESS.</strong><em>GhostKing</em></div>
+    <div><h3>SHOP</h3><a href="/collections/gorras">Gorras</a><a href="/collections/camisetas">Camisetas</a><a href="/collections/maletas">Maletas</a></div>
+    <div><h3>COLLECTIONS</h3><a href="/collections/new-arrivals">New Arrivals</a><a href="/collections/best-sellers">Best Sellers</a><a href="/collections/all">All Products</a></div>
+    <div><h3>COMPANY</h3><a href="/pages/about">About Us</a><a href="/pages/our-story">Our Story</a><a href="/pages/contact">Contact</a></div>
+    <div class="newsletter"><h3>JOIN THE KINGDOM.</h3><p>Be the first to know about new drops and exclusive offers.</p>{% form 'customer' %}<input type="hidden" name="contact[tags]" value="newsletter"><input type="email" name="contact[email]" placeholder="Enter your email"><button type="submit">→</button>{% endform %}</div>
+  </footer>
+</main>
+
+{% schema %}
+{
+  "name": "GhostKing home",
+  "settings": [],
+  "presets": [{ "name": "GhostKing home" }]
+}
+{% endschema %}
